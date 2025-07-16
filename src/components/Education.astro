@@ -1,8 +1,12 @@
+---
+const { t, lang } = Astro.props;
+---
+
 <section>
-  <h2 class="text-2xl font-bold mb-4">Educación</h2>
+  <h2 class="text-2xl font-bold mb-4">{t('education.title')}</h2>
   <div>
-    <h3 class="font-bold text-lg">Universidad Diego Portales</h3>
-    <span class="text-xs text-gray-400">2013 - 2017</span>
-    <p class="text-gray-200 text-base leading-relaxed">Ingeniería en Informática y Gestión</p>
+    <h3 class="font-bold text-lg">{t('education.udp.name')}</h3>
+    <span class="text-xs text-gray-400">{t('education.udp.date')}</span>
+    <p class="text-gray-200 text-base leading-relaxed">{t('education.udp.degree')}</p>
   </div>
 </section> 

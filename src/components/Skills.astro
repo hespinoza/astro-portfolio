@@ -1,42 +1,17 @@
+---
+const { t, lang } = Astro.props;
+---
+
 <section>
-  <h2 class="text-2xl font-bold mb-4">Habilidades</h2>
+  <h2 class="text-2xl font-bold mb-4">{t('skills.title')}</h2>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
     <div>
-      <h3 class="font-semibold mb-2">Tecnologías</h3>
-      <ul class="list-disc list-inside text-base text-gray-200 space-y-1">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Ruby / Rails</li>
-        <li>Python / Django / FastAPI</li>
-        <li>PHP / Laravel / Symfony / CodeIgniter</li>
-        <li>Git / GitHub / GitLab</li>
-        <li>SQL / PostgreSQL / MySQL / SQLite</li>
-        <li>Redis / RabbitMQ / Sidekiq</li>
-        <li>React / Vue / Astro</li>
-        <li>Docker / Kubernetes</li>
-        <li>AWS / GCP / Vercel</li>
-      </ul>
+      <h3 class="font-semibold mb-2">{t('skills.tech.title')}</h3>
+      <ul class="list-disc list-inside text-base text-gray-200 space-y-1" set:html={t('skills.tech.list')}></ul>
     </div>
     <div>
-      <h3 class="font-semibold mb-2">Soft Skills</h3>
-      <ul class="list-disc list-inside text-base text-gray-200 space-y-1">
-        <li>Liderazgo técnico</li>
-        <li>Comunicación efectiva</li>
-        <li>Pensamiento estratégico</li>
-        <li>Gestión de equipos</li>
-        <li>Resolución de problemas</li>
-        <li>Adaptabilidad</li>
-        <li>Orientación a la mejora continua</li>
-        <li>Autonomía</li>
-        <li>Proactividad</li>
-        <li>Pensamiento analítico</li>
-        <li>Empatía</li>
-        <li>Trabajo colaborativo</li>
-        <li>Capacidad de mentoring</li>
-        <li>Visión de negocio</li>
-        <li>Escucha activa</li>
-      </ul>
+      <h3 class="font-semibold mb-2">{t('skills.soft.title')}</h3>
+      <ul class="list-disc list-inside text-base text-gray-200 space-y-1" set:html={t('skills.soft.list')}></ul>
     </div>
   </div>
 </section>

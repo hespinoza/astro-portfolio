@@ -1,6 +1,10 @@
+---
+const { t, lang } = Astro.props;
+---
+
 <section>
-  <h2 class="text-2xl font-bold mb-4">Sobre mí</h2>
+  <h2 class="text-2xl font-bold mb-4">{t('about.title')}</h2>
   <p class="text-left text-base text-gray-200 leading-relaxed">
-    Soy Ingeniero en Informática con más de 8 años de experiencia en desarrollo backend, liderazgo técnico y gestión de equipos en entornos de alta exigencia y plataformas de alta concurrencia.
+    {t('about.about')}
   </p>
 </section>
