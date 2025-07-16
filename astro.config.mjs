@@ -7,7 +7,7 @@ export default defineConfig({
     locales: ['es', 'en'],
     defaultLocale: 'es',
     routing: {
-      prefixDefaultLocale: true  // incluye `/es/` y `/en/` en todas las rutas
+      prefixDefaultLocale: false  // incluye `/es/` y `/en/` en todas las rutas
     }
   },
 });
