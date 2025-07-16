@@ -1,11 +1,12 @@
 ---
+import LanguagePicker from '../components/LanguagePicker.astro';
 const { t, lang } = Astro.props;
 ---
 
-<header class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 w-full">
+<header class="flex flex-col md:flex-row items-start justify-between mb-12 w-full">
   <div class="flex-1">
     <h1 class="text-4xl font-extrabold mb-2">Héctor Espinoza Encina</h1>
-    <p class="text-lg text-gray-300 mb-1">Con una sólida trayectoria en ingeniería de software, liderazgo técnico y mejora continua de productos, me especializo en transformar desafíos complejos en soluciones escalables y de alto impacto, manteniéndome siempre un paso adelante mediante el uso de tecnologías modernas y buenas prácticas de desarrollo.</p>
+    <p class="text-lg text-gray-300 mb-1">{t('header.header')}</p>
     <div class="flex items-center gap-2 text-gray-400 text-sm mb-4">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21s-6-5.686-6-10a6 6 0 1112 0c0 4.314-6 10-6 10z" />
@@ -28,5 +29,10 @@ const { t, lang } = Astro.props;
       </a>
     </div>
   </div>
-  <img src="/profile.webp" alt="Foto de perfil de Héctor Espinoza Encina" width="300" height="300" class="rounded-full object-cover ml-0 md:ml-8 mt-8 md:mt-0 shadow-lg" loading="lazy" />
+  <div class="flex flex-col items-end">
+    <img src="/profile.webp" alt="Foto de perfil de Héctor Espinoza Encina" width="300" height="300" class="rounded-full object-cover ml-0 md:ml-8 mt-8 md:mt-0 shadow-lg" loading="lazy" />
+  </div>
+  <div class="absolute top-4 right-4 z-10">
+    <LanguagePicker />
+  </div>
 </header>

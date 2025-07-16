@@ -3,109 +3,65 @@ const { t, lang } = Astro.props;
 ---
 
 <section>
-  <h2 class="text-2xl font-bold mb-4">Experiencia</h2>
+  <h2 class="text-2xl font-bold mb-4">{t('experience.title')}</h2>
   <!-- Frogmi -->
   <div class="mb-8">
     <div class="flex items-center gap-2 mb-1">
-      <h3 class="font-bold text-lg">Frogmi</h3>
+      <h3 class="font-bold text-lg">{t('experience.frogmi.title')}</h3>
       <a href="https://www.frogmi.com" target="_blank" class="text-blue-500 hover:text-blue-600">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
         </svg>
       </a>
-      <span class="bg-gray-700 text-xs px-2 py-0.5 rounded font-semibold">Remoto</span>
-      <span class="text-xs text-gray-400 ml-2 flex-1 text-right">Mar 2024 - Mar 2025</span>
+      <span class="bg-gray-700 text-xs px-2 py-0.5 rounded font-semibold">{t('app.remote')}</span>
+      <span class="text-xs text-gray-400 ml-2 flex-1 text-right">{t('experience.frogmi.date')}</span>
     </div>
-    <div class="font-semibold text-base mb-1">Tech Operations Manager</div>
-    <p class="text-gray-200 text-base leading-relaxed">
-      Durante mi experiencia liderando la operación técnica de una plataforma SaaS, asumí la responsabilidad de garantizar su estabilidad y disponibilidad en contextos de alta demanda, donde la concurrencia era un desafío constante. Desde cero, conformé y consolidé un equipo de desarrollo, estableciendo metodologías ágiles, procesos operativos eficientes y planes de carrera que no solo impulsaron el crecimiento profesional de cada integrante, sino que también fortalecieron el rendimiento del equipo como un todo.
-    </p>
-    <br />
-    <p class="text-gray-200 text-base leading-relaxed">
-      En estrecha colaboración con el área comercial, diseñé e implementé nuevas funcionalidades que respondieran a necesidades reales del negocio, asegurando siempre una alineación estratégica entre tecnología y objetivos comerciales. A su vez, implementé un sistema de reportes e indicadores clave que nos permitió monitorear el rendimiento y anticiparnos a errores críticos, facilitando la toma de decisiones técnicas de forma oportuna y con impacto tangible.
-    </p>
-    <br />
-    <p class="text-gray-200 text-base leading-relaxed">
-      Mi enfoque estuvo siempre orientado a la mejora continua: definí estrategias que aceleraron los ciclos de entrega y optimizaron resultados a distintos niveles de tiempo y escala. Además, desempeñé el rol de Oficial de Seguridad de la Información, promoviendo activamente una cultura de ciberseguridad alineada al Sistema de Gestión de Seguridad de la Información (SGSI), consolidando así una operación técnica robusta, segura y en constante evolución.
-    </p>
+    <div class="font-semibold text-base mb-1">{t('experience.frogmi.role')}</div>
+    <article set:html={t('experience.frogmi.description')}></article>
   </div>
   <!-- Talana -->
   <div class="mb-8">
     <div class="flex items-center gap-2 mb-1">
-      <h3 class="font-bold text-lg">Talana</h3>
+      <h3 class="font-bold text-lg">{t('experience.talana.title')}</h3>
       <a href="https://www.talana.com" target="_blank" class="text-blue-500 hover:text-blue-600">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
         </svg>
       </a>
-      <span class="bg-gray-700 text-xs px-2 py-0.5 rounded font-semibold">Remoto</span>
-      <span class="text-xs text-gray-400 ml-2 flex-1 text-right">Mar 2022 - Feb 2024</span>
+      <span class="bg-gray-700 text-xs px-2 py-0.5 rounded font-semibold">{t('app.remote')}</span>
+      <span class="text-xs text-gray-400 ml-2 flex-1 text-right">{t('experience.talana.date')}</span>
     </div>
-    <div class="font-semibold text-base mb-1">Technical Lead</div>
-    <p class="text-gray-200 text-base leading-relaxed">
-      En el contexto de una plataforma SaaS, lideré técnica y operativamente un equipo encargado de los módulos de Firma Digital y Gestión de Personas, asumiendo la responsabilidad de su evolución y estabilidad. Una parte clave de mi rol fue la planificación y ejecución de despliegues a producción, asegurando siempre que cada paso se realizara de forma controlada y sin generar impacto en los usuarios finales.
-    </p>
-    <br />
-    <p class="text-gray-200 text-base leading-relaxed">
-      Apostando por una arquitectura más escalable y mantenible, coordiné el levantamiento de procesos y lideré el desarrollo de microservicios orientados a desacoplar funcionalidades críticas del monolito. Este trabajo no solo mejoró la eficiencia del sistema, sino que también permitió una evolución más ágil del producto.
-    </p>
-    <br />
-    <p class="text-gray-200 text-base leading-relaxed">
-      Fui parte activa en la revisión de código, el proceso de reclutamiento técnico y la formación de nuevos miembros del equipo, contribuyendo a consolidar un equipo sólido y con alto nivel de autonomía. Además, promoví la adopción de buenas prácticas de desarrollo y fomenté una cultura basada en la calidad, la colaboración y la mejora continua como pilares fundamentales del trabajo diario.
-    </p>
+    <div class="font-semibold text-base mb-1">{t('experience.talana.role')}</div>
+    <article set:html={t('experience.talana.description')}></article>
   </div>
   <!-- Dafiti -->
   <div class="mb-8">
     <div class="flex items-center gap-2 mb-1">
-      <h3 class="font-bold text-lg">Dafiti</h3>
+      <h3 class="font-bold text-lg">{t('experience.dafiti.title')}</h3>
       <a href="https://www.dafiti.cl" target="_blank" class="text-blue-500 hover:text-blue-600">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
         </svg>
       </a>
-      <span class="bg-gray-700 text-xs px-2 py-0.5 rounded font-semibold">Remoto</span>
-      <span class="text-xs text-gray-400 ml-2 flex-1 text-right">Ene 2019 - Mar 2022</span>
+      <span class="bg-gray-700 text-xs px-2 py-0.5 rounded font-semibold">{t('app.remote')}</span>
+      <span class="text-xs text-gray-400 ml-2 flex-1 text-right">{t('experience.dafiti.date')}</span>
     </div>
-    <div class="font-semibold text-base mb-1">Senior Full-Stack Developer</div>
-    <p class="text-gray-200 text-base leading-relaxed">
-      Formé parte de un equipo de desarrollo en un entorno ágil, colaborativo y de alta exigencia, donde contribuí activamente al diseño y construcción de aplicaciones y microservicios orientados a unificar catálogos de productos y facilitar la conexión entre sistemas internos y plataformas externas. Esta integración fue clave para mejorar la eficiencia operativa y la consistencia de la información en distintos canales.
-    </p>
-    <br />
-    <p class="text-gray-200 text-base leading-relaxed">
-      Además, asumí la responsabilidad de mantener y evolucionar sistemas críticos para el negocio, entre ellos la pasarela de pagos, el CRM, la gestión de warehouse, el tracking de pedidos y la integración con carriers logísticos. Estos sistemas eran piezas fundamentales de la operación diaria, por lo que su estabilidad y mejora continua eran prioritarias.
-    </p>
-    <br />
-    <p class="text-gray-200 text-base leading-relaxed"></p>
-      Participé también en procesos de refactorización de servicios legados, abordando desafíos técnicos complejos para modernizar su arquitectura y optimizar su rendimiento. En todo momento, enfoqué mi trabajo en entregar valor de forma continua, con soluciones sostenibles y alineadas a las necesidades del negocio.
-    </p>
+    <div class="font-semibold text-base mb-1">{t('experience.dafiti.role')}</div>
+    <article set:html={t('experience.dafiti.description')}></article>
   </div>
   <!-- Groupon -->
   <div class="mb-8">
     <div class="flex items-center gap-2 mb-1">
-      <h3 class="font-bold text-lg">Groupon</h3>
+      <h3 class="font-bold text-lg">{t('experience.groupon.title')}</h3>
       <a href="https://www.groupon.com" target="_blank" class="text-blue-500 hover:text-blue-600">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
         </svg>
       </a>
-      <span class="bg-gray-700 text-xs px-2 py-0.5 rounded font-semibold">Presencial</span>
-      <span class="text-xs text-gray-400 ml-2 flex-1 text-right">May 2017 - May 2018</span>
+      <span class="bg-gray-700 text-xs px-2 py-0.5 rounded font-semibold">{t('app.in_person')}</span>
+      <span class="text-xs text-gray-400 ml-2 flex-1 text-right">{t('experience.groupon.date')}</span>
     </div>
-    <div class="font-semibold text-base mb-1">Software Developer Engineer</div>
-    <p class="text-gray-200 text-base leading-relaxed">
-      En esta compañía, desarrollé un sistema de gestión de imágenes orientado a soportar alta concurrencia, facilitando el trabajo de los equipos de marketing y producto. Esta solución optimizó la administración visual de campañas y contenidos en el sitio web, mejorando tanto la eficiencia operativa como la experiencia del usuario interno.
-    </p>
-    <br />
-    <p class="text-gray-200 text-base leading-relaxed">
-      También implementé una arquitectura basada en microservicios para centralizar la creación, configuración y control de campañas comerciales y minisitios, otorgando mayor flexibilidad al negocio y reduciendo los tiempos de entrega en iniciativas clave.
-    </p>
-    <br />
-    <p class="text-gray-200 text-base leading-relaxed">
-      Otro de los desafíos fue diseñar e implementar un proceso ETL propio para la migración de datos hacia una nueva plataforma regional, asegurando la integridad, trazabilidad y consistencia de la información durante todo el proceso.
-    </p>
-    <br />
-    <p class="text-gray-200 text-base leading-relaxed">
-      Como fullstack, mi trabajo fue contribuir tanto en frontend como backend, siempre bajo una arquitectura modular y escalable que permitió iterar rápidamente y enfrentar con solidez los desafíos técnicos del entorno.
-    </p>
+    <div class="font-semibold text-base mb-1">{t('experience.groupon.role')}</div>
+    <article set:html={t('experience.groupon.description')}></article>
   </div>
 </section>

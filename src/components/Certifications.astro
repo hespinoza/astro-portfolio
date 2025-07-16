@@ -3,9 +3,6 @@ const { t, lang } = Astro.props;
 ---
 
 <section>
-  <h2 class="text-2xl font-bold mb-4">Certificaciones</h2>
-  <ul class="list-disc list-inside text-base text-gray-200 space-y-1">
-    <li>IBM Full Stack Software Developer — Jul 2025 (Coursera)</li>
-    <li>Scrum Foundation Professional Certificate — Feb 2024 (CertiProf)</li>
-  </ul>
+  <h2 class="text-2xl font-bold mb-4">{t('certs.title')}</h2>
+  <ul class="list-disc list-inside text-base text-gray-200 space-y-1" set:html={t('certs.list')}></ul>
 </section> 
